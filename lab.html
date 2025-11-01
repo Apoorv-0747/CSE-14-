@@ -1,27 +1,99 @@
-<!Doc Type HTML>
-<HTML>
-<HEAD>
-<h2>Image Example</h2>
-<img src="IMAGE.JPG" alt="Sample Image" width="200" height="200" />
-<p>This is an image using the <code>&lt;img&gt;</code> tag.</p>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width' initial-scale=1.0" />
+        <title>Global Daily News - Homepage</title>
+    </head>
+    <body>
+        <header>
+            <h1> Global Daily News</h1>
+            <p>Your Trusted Source for Latest Updates</p>
+        </header>
 
-<h2>Audio Example</h2>
-<audio controls>
-  <source src="sample-audio.mp3" type="audio/mp3" />
-  <source src="sample-audio.ogg" type="audio/ogg" />
- </audio>
-<p>This is an audio player using the <code>&lt;audio&gt;</code> tag.</p>
+        <nav>
+            <a herf="#World">World</a> | <a herf="#sports">Sports</a>  |
+            <a herf="#Entertainment">Entertainment</a> |
+            <a herf="#podcast">Podcast</a> |
+            <a herf="#Contacts">Contacts</a>
+        </nav>
 
-<h2>Video Example</h2>
-<video width="320" height="240" controls>
-  <source src="sample-video.mp4" type="video/mp4" />
-  <source src="sample-video.ogg" type="video/ogg" />
-  Your browser does not support the video tag.
-</video>
-<p>This is a video player using the <code>&lt;video&gt;</code> tag.</p>
+        <main>
+            <section id="world">
+                <h2>World News</h2>
+                <p>
+                    <b>Today's Top Headline:</b>Global Leaders Meet to Discuss Climate Change Initiatives.
+                </p>
+                <div class="media-container">
+                    <img
+                    src="https://upload.wikipedia.org/wikipedia/commons/f/ff/BBC_World_News.svg"
+                    alt="BBC NEWS LOGO"
+                    style="width: 250px; height: auto"
+                    />
+                    <br />
+                    <a herf="https;//www.bbb.com/" target="_blank">Read More on BBC</a>
+                </div>
+            </section>
 
-<h2>Iframe Example</h2>
-<iframe width="420" height="315" src="https://www.youtube.com/embed/0u0QwWvQvQ0" title="YouTube Video" frameborder="0" allowfullscreen></iframe>
-<p>This is an iframe using the <code>&lt;iframe&gt;</code> tag to embed a YouTube video.</p>
-</HEAD>
-</HTML>
+            <section id="sports">
+                <h2>Sports Update</h2>
+                <p>HIghlights of Yesterday's Match With Thrilling Moments.</p>
+
+                <div class="media-container">
+                    <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/-aPONfxjk_4?si=j5GXr5Xb1dWTtBKY"
+                    title="Youtube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encryoted-media; gyroscope; picture-in-picture; web-share"
+                    referrepolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                    ></iframe>
+                    <p>
+                        <small
+                         >*Placeholder video is 'Big Buck Bunny' for demonstration.</small>
+                    </p>
+                </div>
+            </section>
+
+            <section id="Entertainment">
+                <h2>Entertainment Buzz</h2>
+                <p>New Movie Trailer Released Today . Fans Re Exited!</p>
+
+                <div class="media-container">
+                    <video width="560" height="315" controls>
+                     <source
+                     src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                     type="video/mp4"
+                     />   
+                    </video>
+                </div>
+            </section>
+
+            <section id="podcast">
+                <h2>News Podcast</h2>
+                <p>Listen to Today's Top Headlines:</p>
+
+                <div class="media-container">
+                    <audio controls>
+                        <source
+                        src="https://file-examples.com/storage/fe342654-2c6c-485a-a38f-495278c25791/2017/11/file_example_MP3_700KB.mp3"
+                        type="audio/mpeg"
+                        />
+                    </audio>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section id="contact">
+                <h3>Contact Us</h3>
+                <p>
+                    Email: <a href="mailto:info@globalnews.com">info@globalnews.com</a>
+                </p>
+            </section>
+            <p>&copy; 2025 Global Daily News</p>
+        </footer>
+    </body>
+</html>
